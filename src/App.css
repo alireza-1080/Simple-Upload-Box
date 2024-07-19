@@ -1,0 +1,11 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #cfd6e1;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}

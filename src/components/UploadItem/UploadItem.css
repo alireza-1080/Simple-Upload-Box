@@ -1,0 +1,66 @@
+.upload-item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "image . . ."
+    "image name volume icon"
+    "image bar bar bar"
+    ;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px 10px 5px 0;
+}
+
+.upload-item-container img {
+    grid-area: image;
+    width: 90%;
+    max-width: 100px;
+    justify-self: center;
+}
+
+.upload-item-container h3 {
+    grid-area: name;
+    font-size: 0.8rem;
+    font-weight: 700;
+    justify-self: flex-start;
+}
+
+.upload-item-container h4 {
+    grid-area: volume;
+    font-size: 0.8rem;
+    justify-self: flex-end;
+    margin-right: 0.5rem;
+}
+
+.upload-item-container .icon {
+    grid-area: icon;
+    font-size: 1rem;
+}
+
+.upload-item-container .progress-container {
+    grid-area: bar;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #e3e3e3;
+}
+
+.upload-item-container .progress-container .progress-bar {
+    width: 20%;
+    height: 5px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #f432ac, #e70669);;
+
+}
+
+.check {
+    color: green;
+}
+
+.cancel {
+    color: red;
+}

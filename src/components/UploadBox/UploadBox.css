@@ -1,0 +1,32 @@
+.upload-box-container {
+    margin: 0 0.5rem;
+    width: calc(100% - 16px);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 480px;
+}
+
+.upload-box-container h2 {
+    color: #5a81da;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+#upload-element {
+    display: none;
+}
+
+.upload-box-container label {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    width: 100%;
+    height: 120px;
+    border: 5px dashed #dfe7fe;
+    border-radius: 20px;
+    color: #b3c6ff;
+    font-size: 2.5rem;
+}
